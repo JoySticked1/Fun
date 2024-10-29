@@ -17,8 +17,8 @@ function setup() {
 	background(100)
 }
 function draw() {
-resizeCanvas(windowWidth, windowHeight);
-  countdown += 1
+	resizeCanvas(windowWidth, windowHeight);
+  	countdown += 1
 	if(countdown==10){
 		readyToJump = false
 	}
