@@ -44,7 +44,7 @@ function draw() {
 		player.velocity.y = 0
 	}
   if(player.colliding(ground) > 0 && readyToJump == true){
-		player.velocity.y = -10
+		player.velocity.y = -1
 		readyToJump = false
 	}
 }
