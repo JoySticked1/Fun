@@ -27,6 +27,8 @@ function draw() {
 	if(windowHeight != h){
 		resizeCanvas(windowWidth, windowHeight)
 	}
+	w = windowWidth
+	h = windowHeight
 	background(100)
 	windowResized()
   	countdown += 1
