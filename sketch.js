@@ -1,3 +1,7 @@
+function windowResized() {
+  resizeCanvas(windowWidth, windowHeight);
+}
+
 var	readyToJump = false
 var countdown = 10
 function setup() {
@@ -17,7 +21,7 @@ function setup() {
 	background(100)
 }
 function draw() {
-	resizeCanvas(windowWidth, windowHeight);
+	windowResized()
   	countdown += 1
 	if(countdown==10){
 		readyToJump = false
