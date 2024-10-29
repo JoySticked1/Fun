@@ -2,14 +2,16 @@
 
 var readyToJump = false
 var countdown = 10
+var Width;
+var Height;
 function setup() {
-	var w = windowWidth
-	var h = windowHeight
+    Width = windowWidth;
+    Height = windowHeight;
 	world.gravity.y = 10;
 	player = new Sprite()
 	player.bounciness = 0
 	player.d = 60
-  player.x = windowWidth/2
+    player.x = windowWidth/2
 	player.y = windowHeight/2
 	createCanvas(windowWidth, windowHeight);
 	ground = new Sprite()
@@ -21,16 +23,15 @@ function setup() {
 	background(100)
 }
 function draw() {
-	if(windowWidth != w){
+	if(Width != windowWidth){
 		resizeCanvas(windowWidth, windowHeight)
 	}
-	if(windowHeight != h){
+	if(windowHeight != Height){
 		resizeCanvas(windowWidth, windowHeight)
 	}
 	w = windowWidth
 	h = windowHeight
 	background(100)
-	windowResized()
   	countdown += 1
 	if(countdown==10){
 		readyToJump = false
