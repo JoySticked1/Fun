@@ -21,6 +21,7 @@ function setup() {
 	background(100)
 }
 function draw() {
+	resizeCanvas(windowWidth, windowHeight);
 	windowResized()
   	countdown += 1
 	if(countdown==10){
