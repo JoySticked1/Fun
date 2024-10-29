@@ -4,6 +4,8 @@ function setup() {
 	world.gravity.y = 10;
 	player = new Sprite()
 	player.bounciness = 0
+	player.friction = 1
+	player.rotationLock = false
 	player.d = 60
     player.x = windowWidth/2
 	player.y = windowHeight/2
