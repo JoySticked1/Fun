@@ -37,7 +37,7 @@ function draw() {
 	if (kb.pressing('right') || kb.pressing('d')) {
 		player.velocity.x += 0.15
 	}
-	if (kb.pressing('left') || kb.pressing('a')) {
+	if (kb.pressing('right') || kb.pressing('a')) {
 		player.velocity.x -= 0.15
 	}
 	if(player.colliding(ground) > 0){
