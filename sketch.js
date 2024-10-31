@@ -6,20 +6,20 @@ var countdown = 10
 function setup() {
 	world.gravity.y = 10;
 	player = new Sprite()
-    playermid = new Sprite()
-    player.color = 'white'
-    playermid.color = 'black'
-    fun = new GlueJoint(player,playermid)
+    	playermid = new Sprite()
+    	player.color = 'white'
+    	playermid.color = 'black'
+    	fun = new GlueJoint(player,playermid)
 	player.bounciness = 0
 	player.friction = 1
 	player.rotationLock = false
 	player.d = (windowHeight+windowWidth)/30
-    playermid.scale = (windowHeight+windowWidth)/3000
-    player.x = windowWidth/2
+    	playermid.scale = (windowHeight+windowWidth)/3000
+    	player.x = windowWidth/2
 	player.y = windowHeight/2
 	createCanvas(windowWidth, windowHeight);
 	ground = new Sprite()
-    ground.color = 'white'
+    	ground.color = 'white'
 	ground.width = windowWidth*3
 	ground.x = windowWidth/2
 	ground.y = windowHeight - 1
