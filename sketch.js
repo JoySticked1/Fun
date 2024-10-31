@@ -33,12 +33,12 @@ function draw() {
 		player.velocity.y += 0.1 
 	}
 	if (kb.pressing('right') || kb.pressing('d')) {
-		if (player.velocity.x>5){
-			player.velocity.x -= 0.15
+		if (player.velocity.x<5){
+			player.velocity.x += 0.15
 		}
 	}
 	if (kb.pressing('left') || kb.pressing('a')) {
-		if (player.velocity.x<-5){
+		if (player.velocity.x>-5){
 			player.velocity.x -= 0.15
 		}
 	}
