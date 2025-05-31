@@ -18,7 +18,7 @@ function setup() {
     fun = new GlueJoint(player,playermid)
 	player.bounciness = 0
 	player.friction = 1
-	player.rotationLock = false
+	player.rotationLock = false;
 	player.d = (windowHeight+windowWidth)/30
     playermid.scale = (windowHeight+windowWidth)/3000
     player.x = windowWidth/2
